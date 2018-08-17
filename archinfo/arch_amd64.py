@@ -263,6 +263,9 @@ class ArchAMD64(Arch):
         896: 'sc_class',
         904: 'gs_const',
         912: 'ip_at_syscall',
+        916: 'cc_src',
+        920: 'cc_src2',
+        924: 'cc_dst'
     }
 
     registers = {
@@ -381,6 +384,9 @@ class ArchAMD64(Arch):
         'gs': (904, 8),
         'gs_const': (904, 8),
         'ip_at_syscall': (912, 8),
+        'cc_src': (916, 4),
+        'cc_src2': (920, 4),
+        'cc_dst': (924, 4)
     }
 
     argument_registers = {

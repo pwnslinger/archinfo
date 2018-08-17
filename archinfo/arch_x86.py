@@ -264,6 +264,9 @@ class ArchX86(Arch):
         332: 'nraddr',
         336: 'sc_class',
         340: 'ip_at_syscall',
+        344: 'cc_src',
+        348: 'cc_src2',
+        352: 'cc_dst'
     }
 
     registers = {
@@ -346,6 +349,9 @@ class ArchX86(Arch):
         'nraddr': (332, 4),
         'sc_class': (336, 4),
         'ip_at_syscall': (340, 4),
+        'cc_src': (344, 4),
+        'cc_src2': (348, 4),
+        'cc_dst': (352, 4)
     }
 
     argument_registers = { registers['eax'][0],
